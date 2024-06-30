@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/dashFragment">
+
+    <fragment
+        android:id="@+id/dashFragment"
+        android:name="il.ac.tcb.st.finalassignment.ui.dash.dashFragment"
+        android:label="fragment_dash"
+        tools:layout="@layout/fragment_dash" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="il.ac.tcb.st.finalassignment.ui.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="il.ac.tcb.st.finalassignment.ui.Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+
+    <action
+        android:id="@+id/action_global_navigate_to_login"
+        app:destination="@id/loginFragment"
+        app:launchSingleTop="false"
+        app:popUpTo="@id/navigation.xml"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="il.ac.tcb.st.finalassignment.ui.Profile.profileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/gameContentFragment"
+        android:name="il.ac.tcb.st.finalassignment.ui.GameContent.gameContentFragment"
+        android:label="fragment_game_content"
+        tools:layout="@layout/fragment_game_content" />
+</navigation>

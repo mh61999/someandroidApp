@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashFragment"
+        android:icon="@drawable/dashicon"
+        android:iconTint="@color/mainTheme"
+        android:title="Dash"
+        />
+    <item
+        android:id="@+id/favoritesFragment"
+        android:icon="@drawable/favicon"
+        android:iconTint="@color/mainTheme"
+        android:title="Favs"
+        />
+    <item
+        android:id="@+id/profileFragment2"
+        android:icon="@drawable/profileicon"
+        android:iconTint="@color/mainTheme"
+        android:title="Profile"
+        />
+
+
+</menu>
