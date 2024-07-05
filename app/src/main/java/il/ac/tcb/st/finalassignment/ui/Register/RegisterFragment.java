@@ -98,19 +98,20 @@ public class RegisterFragment extends Fragment {
                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
                                         public void onSuccess(Void aVoid) {
-                                            Log.d(TAG, "DocumentSnapshot successfully written!");
+
+                                            NavHostFragment.findNavController(RegisterFragment.this).navigate(R.id.dashFragment);
                                         }
                                     })
                                     .addOnFailureListener(new OnFailureListener() {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
-                                            Log.w(TAG, "Error writing document", e);
+                                            Toast.makeText(getContext(),"something went wrong",Toast.LENGTH_SHORT).show();
                                         }
                                     });
 
                         }
                         else {
-
+                            Toast.makeText(getContext(),"something went wrong",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
