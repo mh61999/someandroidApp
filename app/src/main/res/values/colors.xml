@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="mainTheme">#a28089</color>
+    <color name="filterTheme">#FF3066</color>
     <color name="secondaryTheme">#21061E</color>
     <color name="menu"> #a0d2eb</color>
     <color name="textTheme">#e5eaf5</color>

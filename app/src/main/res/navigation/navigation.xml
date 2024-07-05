@@ -37,4 +37,9 @@
         android:name="il.ac.tcb.st.finalassignment.ui.GameContent.gameContentFragment"
         android:label="fragment_game_content"
         tools:layout="@layout/fragment_game_content" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="il.ac.tcb.st.finalassignment.ui.Register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
 </navigation>

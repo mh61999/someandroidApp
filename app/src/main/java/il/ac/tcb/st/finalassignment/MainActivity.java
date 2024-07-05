@@ -95,6 +95,9 @@ public class MainActivity extends AppCompatActivity {
                 } else if (navDestination.getId() == R.id.gameContentFragment) {
                     binding.bottomNavigationViewMain.setVisibility(View.GONE);
                     if (actionBar != null) { actionBar.hide(); }
+                } else if (navDestination.getId() == R.id.registerFragment) {
+                    binding.bottomNavigationViewMain.setVisibility(View.GONE);
+                    if (actionBar != null) { actionBar.hide(); }
                 } else {
                     binding.bottomNavigationViewMain.setVisibility(View.VISIBLE);
                     if (actionBar != null) { actionBar.show(); }

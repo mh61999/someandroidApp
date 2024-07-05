@@ -20,8 +20,18 @@ public class User {
     String FirstName;
     String LastName;
 
-    public User(String FirstName,String LastName){
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    String Email;
+    public User(String FirstName,String LastName,String Email){
         this.FirstName = FirstName;
         this.LastName=LastName;
+        this.Email=Email;
     }
 }

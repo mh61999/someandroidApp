@@ -71,7 +71,7 @@ public class profileFragment extends Fragment {
                 DocumentSnapshot document = task.getResult();
                 if (document.exists()) {
                     Log.d(TAG, "user: " + document.getData());
-                    User u = new User(document.getString("FirstName"),document.getString("LastName"));
+                    User u = new User(document.getString("firstName"),document.getString("lastName"),document.getString("email"));
                     binding.emailLabel.setText(u.getFirstName()+ " "+ u.getLastName());
                 } else {
                     Log.d(TAG, "No such document");
